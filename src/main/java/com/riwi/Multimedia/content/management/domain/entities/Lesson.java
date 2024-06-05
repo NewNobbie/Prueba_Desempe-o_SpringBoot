@@ -6,12 +6,13 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 
 import java.time.LocalDateTime;
+import java.util.List;
 
 @Entity(name = "lesson")
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-public class lesson {
+public class Lesson {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -29,4 +30,16 @@ public class lesson {
 
     @Column(nullable = false)
     private Boolean active;
+
+    @ManyToOne(fetch = FetchType.LAZY)
+    @JoinColumn(name = "class_id", referencedColumnName = "id")
+    private Clss class_id;
+
+    @OneToMany(
+            fetch = FetchType.LAZY,
+            mappedBy = "lesson_id",
+            cascade = CascadeType.ALL,
+            orphanRemoval = false
+    )
+    private List<Multimedia> multimediaList;
 }

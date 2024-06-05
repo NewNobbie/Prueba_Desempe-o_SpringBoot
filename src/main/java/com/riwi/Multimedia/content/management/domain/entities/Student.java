@@ -1,35 +1,41 @@
 package com.riwi.Multimedia.content.management.domain.entities;
 
-
 import jakarta.persistence.*;
+import jakarta.validation.constraints.Max;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
-import java.time.LocalDateTime;
+import java.time.LocalDate;
 
-@Entity(name = "class_")
+@Entity(name = "student")
 @Data
 @Builder
 @AllArgsConstructor
 @NoArgsConstructor
-public class class_ {
+public class Student {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(columnDefinition = "BIGINT(20)")
+    /*@Column( precision = 5)
+    @Max(value = 20)*/
     private Long id;
 
     @Column(nullable = false)
     private String name;
 
-    @Column(nullable = false, columnDefinition = "TEXT")
-    private String description;
+    @Column(nullable = false)
+    private String email;
 
     @Column(nullable = false)
-    private LocalDateTime created_ad;
+    private LocalDate created_at;
 
     @Column(nullable = false)
     private Boolean active;
+
+    @ManyToOne(fetch = FetchType.LAZY)
+    @JoinColumn(name = "class_id", referencedColumnName = "id")
+    private Clss class_id;
+
 }

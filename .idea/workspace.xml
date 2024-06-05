@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5c37564b-80cb-4e28-9eda-2e6b7b0a5674" name="Changes" comment="" />
+    <list default="true" id="17d08dad-aa57-4447-9791-8561f853800f" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -23,7 +23,7 @@
   <component name="ProjectColorInfo"><![CDATA[{
   "associatedIndex": 4
 }]]></component>
-  <component name="ProjectId" id="2hSU6NJzEfsmXc40LklSAIbfGUr" />
+  <component name="ProjectId" id="2hSf4lZLlkJFGPVypA0hefcDC9l" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -35,7 +35,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "ignore.virus.scanning.warn.message": "true",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "D:/SpringBoot/_05_Vacants_Api_JPA_DTO"
+    "last_opened_file_path": "D:/SpringBoot/Simulacro/Prueba Desempeño/Multimedia-content-management"
   }
 }]]></component>
   <component name="RunManager">
@@ -61,12 +61,17 @@
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="5c37564b-80cb-4e28-9eda-2e6b7b0a5674" name="Changes" comment="" />
-      <created>1717586795203</created>
+      <changelist id="17d08dad-aa57-4447-9791-8561f853800f" name="Changes" comment="" />
+      <created>1717592209346</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1717586795203</updated>
+      <updated>1717592209346</updated>
     </task>
     <servers />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/Multimedia_content_management$MultimediaContentManagementApplication.ic" NAME="MultimediaContentManagementApplication Coverage Results" MODIFIED="1717593379734" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>com.riwi.Multimedia.content.management.*</FILTER>
+    </SUITE>
   </component>
 </project>
