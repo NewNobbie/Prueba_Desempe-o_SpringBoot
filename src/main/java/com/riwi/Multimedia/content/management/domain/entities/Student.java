@@ -8,6 +8,7 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 
 import java.time.LocalDate;
+import java.time.LocalDateTime;
 
 @Entity(name = "student")
 @Data
@@ -29,7 +30,7 @@ public class Student {
     private String email;
 
     @Column(nullable = false)
-    private LocalDate created_at;
+    private LocalDateTime created_at;
 
     @Column(nullable = false)
     private Boolean active;
