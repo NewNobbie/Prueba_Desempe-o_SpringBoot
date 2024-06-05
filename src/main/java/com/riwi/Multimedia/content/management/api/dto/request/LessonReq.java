@@ -4,6 +4,8 @@ import com.riwi.Multimedia.content.management.domain.entities.Clss;
 import com.riwi.Multimedia.content.management.domain.entities.Lesson;
 import com.riwi.Multimedia.content.management.domain.entities.Multimedia;
 import com.riwi.Multimedia.content.management.domain.entities.Student;
+import jakarta.validation.constraints.NotBlank;
+import jakarta.validation.constraints.Size;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
@@ -18,17 +20,22 @@ import java.util.List;
 @NoArgsConstructor
 public class LessonReq {
 
-    private Long id;
-
+    @NotBlank(message = "Title is required")
+    @Size(max = 255, message = "Exceeded the maximum number of characters (255)")
     private String title;
 
+    @NotBlank(message = "The content is required")
     private String content;
 
+    @NotBlank(message = "The created date is required")
     private LocalDateTime created_at;
 
+    @NotBlank(message = "The status is required")
     private Boolean active;
 
+    @NotBlank(message = "Class id is required")
     private Clss class_id;
 
+    @NotBlank(message = "Multimedia List is required")
     private List<Multimedia> multimediaList;
 }
