@@ -27,7 +27,7 @@ public class ClssResp {
 
     private Boolean active;
 
-    private List<Student> students;
+    private List<StudentResp> students;
 
-    private List<Lesson> lessons;
+    private List<LessonResp> lessons;
 }

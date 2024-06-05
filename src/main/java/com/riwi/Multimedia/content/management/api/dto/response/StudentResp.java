@@ -25,5 +25,5 @@ public class StudentResp {
 
     private Boolean active;
 
-    private Clss class_id;
+    private ClssResp class_id;
 }

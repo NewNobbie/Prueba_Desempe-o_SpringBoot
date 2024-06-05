@@ -28,7 +28,7 @@ public class LessonResp {
 
     private Boolean active;
 
-    private Clss class_id;
+    private ClssResp class_id;
 
-    private List<Multimedia> multimediaList;
+    private List<MultimediaResp> multimediaList;
 }

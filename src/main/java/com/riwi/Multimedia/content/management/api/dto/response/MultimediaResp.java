@@ -26,5 +26,5 @@ public class MultimediaResp {
 
     private Boolean active;
 
-    private Lesson lesson_id;
+    private LessonResp lesson_id;
 }

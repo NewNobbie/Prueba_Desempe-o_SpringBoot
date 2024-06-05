@@ -35,6 +35,6 @@ public class StudentReq {
     private Boolean active;
 
     @NotBlank(message = "Class id is required")
-    private Clss class_id;
+    private Long class_id;
 
 }

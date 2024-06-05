@@ -32,9 +32,9 @@ public class ClssReq {
     @NotBlank(message = "The status is required")
     private Boolean active;
 
-    @NotBlank(message = "Students list is required")
+    /*@NotBlank(message = "Students list is required")
     private List<Student> students;
 
     @NotBlank(message = "Lessons list is required")
-    private List<Lesson> lessons;
+    private List<Lesson> lessons;*/
 }

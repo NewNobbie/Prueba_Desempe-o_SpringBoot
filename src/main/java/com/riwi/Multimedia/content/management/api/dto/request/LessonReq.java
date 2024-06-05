@@ -1,9 +1,6 @@
 package com.riwi.Multimedia.content.management.api.dto.request;
 
-import com.riwi.Multimedia.content.management.domain.entities.Clss;
-import com.riwi.Multimedia.content.management.domain.entities.Lesson;
 import com.riwi.Multimedia.content.management.domain.entities.Multimedia;
-import com.riwi.Multimedia.content.management.domain.entities.Student;
 import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.Size;
 import lombok.AllArgsConstructor;
@@ -34,8 +31,8 @@ public class LessonReq {
     private Boolean active;
 
     @NotBlank(message = "Class id is required")
-    private Clss class_id;
+    private Long class_id;
 
-    @NotBlank(message = "Multimedia List is required")
-    private List<Multimedia> multimediaList;
+    /*@NotBlank(message = "Multimedia List is required")
+    private List<Multimedia> multimediaList;*/
 }
