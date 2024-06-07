@@ -23,7 +23,7 @@ public class BadRequestController {
     public BaseErrorResponse handleDataIntegrityViolationException(DataIntegrityViolationException ex) {
         return ErrorResponse.builder
                         ()
-                .message("There is a unique field that cannot be repeated [Survey: title].")
+                .message("There is a unique field that cannot be repeated [Lesson: title].")
                 .status(HttpStatus.BAD_REQUEST.name())
                 .code(HttpStatus.BAD_REQUEST.value())
                 .build();

@@ -2,6 +2,7 @@ package com.riwi.Multimedia.content.management.api.dto.request;
 
 import com.riwi.Multimedia.content.management.domain.entities.Multimedia;
 import jakarta.validation.constraints.NotBlank;
+import jakarta.validation.constraints.NotNull;
 import jakarta.validation.constraints.Size;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
@@ -24,11 +25,11 @@ public class LessonReq {
     @NotBlank(message = "The content is required")
     private String content;
 
-    @NotBlank(message = "The created date is required")
+    @NotNull(message = "The created date is required")
     private LocalDateTime created_at;
 
 
-    @NotBlank(message = "Class id is required")
+    @NotNull(message = "Class id is required")
     private Long class_id;
 
     private List<MultimediaReq> multimediaList;

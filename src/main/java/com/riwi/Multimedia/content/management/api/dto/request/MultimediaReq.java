@@ -1,10 +1,7 @@
 package com.riwi.Multimedia.content.management.api.dto.request;
 
 import com.riwi.Multimedia.content.management.domain.entities.Lesson;
-import jakarta.validation.constraints.FutureOrPresent;
-import jakarta.validation.constraints.NotBlank;
-import jakarta.validation.constraints.Pattern;
-import jakarta.validation.constraints.Size;
+import jakarta.validation.constraints.*;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
@@ -26,7 +23,7 @@ public class MultimediaReq {
     @Size(max = 255, message = "Exceeded the maximum number of characters (255)")
     private String url;
 
-    @NotBlank(message = "The created date is required")
+    @NotNull(message = "The created date is required")
     @FutureOrPresent(message = "It is not possible to enter a date later than the current date.")
     private LocalDateTime created_at;
 
