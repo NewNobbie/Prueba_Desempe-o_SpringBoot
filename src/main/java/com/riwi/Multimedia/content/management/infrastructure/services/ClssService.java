@@ -52,6 +52,9 @@ public class ClssService implements IClssService {
     @Override
     public Page<ClssResp> getAllActive(String name, String description, int page, int size){
 
+        if (page < 0) page = 0;
+
+
         PageRequest pageable = PageRequest.of(page, size);
 
         return this.clssRepository.findByDescriptionContainingOrNameContainingAndActive(name, description, true, pageable).map(clss -> this.entityResponse(clss, 0));
