@@ -1,6 +1,7 @@
 package com.riwi.Multimedia.content.management.infrastructure.services;
 
 import com.riwi.Multimedia.content.management.api.dto.request.StudentReq;
+import com.riwi.Multimedia.content.management.api.dto.response.ClssResp;
 import com.riwi.Multimedia.content.management.api.dto.response.StudentResp;
 import com.riwi.Multimedia.content.management.domain.entities.Clss;
 import com.riwi.Multimedia.content.management.domain.entities.Student;
@@ -73,7 +74,12 @@ public class StudentService implements IStudentService {
 
     public static StudentResp entityResponse(Student entity){
         StudentResp response = new StudentResp();
+        ClssResp clssResp = new ClssResp();
+
+        BeanUtils.copyProperties(entity.getClass_id(), clssResp);
         BeanUtils.copyProperties(entity,response);
+
+        response.setClass_id(clssResp);
         return response;
     }
 

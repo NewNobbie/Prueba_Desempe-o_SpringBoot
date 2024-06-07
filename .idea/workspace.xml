@@ -5,7 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="17d08dad-aa57-4447-9791-8561f853800f" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/riwi/Multimedia/content/management/infrastructure/services/ClssService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/riwi/Multimedia/content/management/infrastructure/services/ClssService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/riwi/Multimedia/content/management/api/controllers/StudentController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/riwi/Multimedia/content/management/api/controllers/StudentController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/riwi/Multimedia/content/management/api/dto/request/LessonReq.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/riwi/Multimedia/content/management/api/dto/request/LessonReq.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/riwi/Multimedia/content/management/api/dto/request/MultimediaReq.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/riwi/Multimedia/content/management/api/dto/request/MultimediaReq.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/riwi/Multimedia/content/management/api/dto/request/StudentReq.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/riwi/Multimedia/content/management/api/dto/request/StudentReq.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/riwi/Multimedia/content/management/domain/entities/Clss.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/riwi/Multimedia/content/management/domain/entities/Clss.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/riwi/Multimedia/content/management/domain/repositories/LessonRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/riwi/Multimedia/content/management/domain/repositories/LessonRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/riwi/Multimedia/content/management/infrastructure/abstrac_services/ILessonService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/riwi/Multimedia/content/management/infrastructure/abstrac_services/ILessonService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/riwi/Multimedia/content/management/infrastructure/services/StudentService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/riwi/Multimedia/content/management/infrastructure/services/StudentService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

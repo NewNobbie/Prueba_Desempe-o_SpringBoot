@@ -22,7 +22,7 @@ public class StudentController {
     @Autowired
     private final IStudentService studentService;
 
-    @Operation(summary = "Show all registers", description = "Returns all paginated registers ")
+    @Operation(summary = "Show all students", description = "Returns all paginated students ")
     @GetMapping
     public ResponseEntity<Page<StudentResp>> getAllStudent(
             @RequestParam(defaultValue = " ") String name,
@@ -41,10 +41,10 @@ public class StudentController {
         return ResponseEntity.ok(this.studentService.get(id));
     }
 
-    @Operation(summary = "Create new register", description = "Add the required data to create a new student")
+    @Operation(summary = "Create new student", description = "Add the required data to create a new student")
     @PostMapping
     public ResponseEntity<StudentResp> insert(
-            @Validated @RequestParam StudentReq request
+            @Validated @RequestBody StudentReq request
             ){
         return ResponseEntity.ok(this.studentService.create(request));
     }

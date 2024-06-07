@@ -4,6 +4,7 @@ package com.riwi.Multimedia.content.management.api.dto.request;
 import com.riwi.Multimedia.content.management.domain.entities.Clss;
 import jakarta.validation.constraints.Email;
 import jakarta.validation.constraints.NotBlank;
+import jakarta.validation.constraints.NotNull;
 import jakarta.validation.constraints.Size;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
@@ -28,7 +29,7 @@ public class StudentReq {
     @Size(max = 255, message = "Exceeded the maximum number of characters (255)")
     private String email;
 
-    @NotBlank(message = "Class id is required")
+    @NotNull(message = "Class id is required")
     private Long class_id;
 
 }

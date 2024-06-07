@@ -31,6 +31,5 @@ public class LessonReq {
     @NotBlank(message = "Class id is required")
     private Long class_id;
 
-    /*@NotBlank(message = "Multimedia List is required")
-    private List<Multimedia> multimediaList;*/
+    private List<MultimediaReq> multimediaList;
 }

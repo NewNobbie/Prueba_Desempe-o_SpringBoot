@@ -31,8 +31,6 @@ public class MultimediaReq {
     private LocalDateTime created_at;
 
 
-    @NotBlank(message = "Lesson id is required")
-    private Long lesson_id;
 
 
 }
