@@ -27,8 +27,6 @@ public class LessonReq {
     @NotBlank(message = "The created date is required")
     private LocalDateTime created_at;
 
-    @NotBlank(message = "The status is required")
-    private Boolean active;
 
     @NotBlank(message = "Class id is required")
     private Long class_id;

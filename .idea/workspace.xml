@@ -6,8 +6,21 @@
   <component name="ChangeListManager">
     <list default="true" id="17d08dad-aa57-4447-9791-8561f853800f" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/riwi/Multimedia/content/management/api/dto/request/ClssReq.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/riwi/Multimedia/content/management/api/dto/request/ClssReq.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/riwi/Multimedia/content/management/api/dto/request/LessonReq.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/riwi/Multimedia/content/management/api/dto/request/LessonReq.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/riwi/Multimedia/content/management/api/dto/request/MultimediaReq.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/riwi/Multimedia/content/management/api/dto/request/MultimediaReq.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/riwi/Multimedia/content/management/domain/entities/Clss.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/riwi/Multimedia/content/management/domain/entities/Clss.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/riwi/Multimedia/content/management/domain/entities/Lesson.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/riwi/Multimedia/content/management/domain/entities/Lesson.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/riwi/Multimedia/content/management/domain/entities/Multimedia.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/riwi/Multimedia/content/management/domain/entities/Multimedia.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/riwi/Multimedia/content/management/domain/entities/Student.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/riwi/Multimedia/content/management/domain/entities/Student.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/riwi/Multimedia/content/management/domain/repositories/ClssRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/riwi/Multimedia/content/management/domain/repositories/ClssRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/riwi/Multimedia/content/management/infrastructure/abstrac_services/IClssService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/riwi/Multimedia/content/management/infrastructure/abstrac_services/IClssService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/riwi/Multimedia/content/management/infrastructure/mappers/ClssMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/riwi/Multimedia/content/management/infrastructure/mappers/ClssMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/riwi/Multimedia/content/management/infrastructure/mappers/LessonMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/riwi/Multimedia/content/management/infrastructure/mappers/LessonMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/riwi/Multimedia/content/management/infrastructure/mappers/MultimediaMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/riwi/Multimedia/content/management/infrastructure/mappers/MultimediaMapper.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/riwi/Multimedia/content/management/infrastructure/mappers/StudentMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/riwi/Multimedia/content/management/infrastructure/mappers/StudentMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/riwi/Multimedia/content/management/infrastructure/services/ClssService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/riwi/Multimedia/content/management/infrastructure/services/ClssService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -17,8 +30,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -36,6 +49,9 @@
       </MavenGeneralSettings>
     </option>
   </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 4
 }</component>
@@ -47,17 +63,17 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Application.MultimediaContentManagementApplication.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;feature/task-dev-02-Entities&amp;&amp;Relational&quot;,
-    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/SpringBoot/Simulacro/Prueba Desempeño/Multimedia-content-management&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.MultimediaContentManagementApplication.executor": "Run",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "feature/task-dev-02-Entities&&Relational",
+    "ignore.virus.scanning.warn.message": "true",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "D:/SpringBoot/Simulacro/Prueba Desempeño/Moreno/performance-test-spring"
   }
-}</component>
+}]]></component>
   <component name="RunManager">
     <configuration name="MultimediaContentManagementApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.riwi.Multimedia.content.management.MultimediaContentManagementApplication" />
@@ -95,6 +111,17 @@
       <updated>1717592209346</updated>
     </task>
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/Multimedia_content_management$MultimediaContentManagementApplication.ic" NAME="MultimediaContentManagementApplication Coverage Results" MODIFIED="1717593379734" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">

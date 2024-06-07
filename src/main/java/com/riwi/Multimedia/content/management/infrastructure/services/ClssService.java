@@ -7,11 +7,13 @@ import com.riwi.Multimedia.content.management.domain.entities.Clss;
 import com.riwi.Multimedia.content.management.domain.entities.Student;
 import com.riwi.Multimedia.content.management.domain.repositories.ClssRepository;
 import com.riwi.Multimedia.content.management.infrastructure.abstrac_services.IClssService;
+import com.riwi.Multimedia.content.management.infrastructure.mappers.ClssMapper;
 import com.riwi.Multimedia.content.management.util.exeptions.IdNotFoundException;
 import lombok.AllArgsConstructor;
 import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
+import org.springframework.data.domain.PageRequest;
 import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Service;
 
@@ -32,19 +34,27 @@ public class ClssService implements IClssService {
         Clss clss = this.requestEntity(request, new Clss());
 
         clss.setActive(true);
-        clss.setCreated_ad(LocalDateTime.now());
+        clss.setCreated_at(LocalDateTime.now());
         return this.entityResponse(this.clssRepository.save(clss), 0);
     }
 
     @Override
     public Page<ClssResp> getAll(Pageable pageable) {
-        Page<Clss> clssPage = clssRepository.findAll(pageable);
-        return clssPage.map(clss-> this.entityResponse(clss));
+        return null;
     }
 
     @Override
     public ClssResp get(Long aLong) {
-        return null;
+        return this.entityResponse(this.find(aLong), 1);
+    }
+
+
+    @Override
+    public Page<ClssResp> getAllActive(String name, String description, int page, int size){
+
+        PageRequest pageable = PageRequest.of(page, size);
+
+        return this.clssRepository.findByDescriptionContainingOrNameContainingAndActive(name, description, true, pageable).map(clss -> this.entityResponse(clss, 0));
     }
 
 

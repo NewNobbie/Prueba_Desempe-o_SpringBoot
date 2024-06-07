@@ -21,6 +21,7 @@ public class Student {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     /*@Column( precision = 5)
     @Max(value = 20)*/
+    @Column(columnDefinition = "INT(20)")
     private Long id;
 
     @Column(nullable = false)

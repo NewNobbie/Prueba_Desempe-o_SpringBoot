@@ -4,6 +4,7 @@ package com.riwi.Multimedia.content.management.api.dto.request;
 import com.riwi.Multimedia.content.management.domain.entities.Lesson;
 import com.riwi.Multimedia.content.management.domain.entities.Student;
 import jakarta.validation.constraints.NotBlank;
+import jakarta.validation.constraints.NotNull;
 import jakarta.validation.constraints.Size;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
@@ -26,11 +27,9 @@ public class ClssReq {
     @NotBlank(message = "The description is required")
     private String description;
 
-    @NotBlank(message = "The created date is required")
+    @NotNull(message = "The created date is required")
     private LocalDateTime created_at;
 
-    @NotBlank(message = "The status is required")
-    private Boolean active;
 
     /*@NotBlank(message = "Students list is required")
     private List<Student> students;

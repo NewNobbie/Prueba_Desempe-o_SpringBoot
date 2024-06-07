@@ -16,7 +16,7 @@ public class Multimedia {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(columnDefinition = "BIGINT(20)")
+    @Column(columnDefinition = "INT(20)")
     private Long id;
 
     @Enumerated(EnumType.STRING)

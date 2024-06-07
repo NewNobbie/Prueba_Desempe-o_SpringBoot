@@ -30,8 +30,6 @@ public class MultimediaReq {
     @FutureOrPresent(message = "It is not possible to enter a date later than the current date.")
     private LocalDateTime created_at;
 
-    @NotBlank(message = "The status is required")
-    private Boolean active;
 
     @NotBlank(message = "Lesson id is required")
     private Long lesson_id;

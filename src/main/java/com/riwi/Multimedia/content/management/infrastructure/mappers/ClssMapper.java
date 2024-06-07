@@ -6,10 +6,17 @@ import com.riwi.Multimedia.content.management.domain.entities.Clss;
 import org.mapstruct.Mapper;
 import org.mapstruct.Mapping;
 import org.mapstruct.MappingTarget;
+import org.mapstruct.Mappings;
 
 @Mapper(componentModel = "spring")
 public interface ClssMapper {
-    @Mapping(target = "id", ignore = true)
+
+    @Mappings({
+            @Mapping(target = "id", ignore = true),
+            @Mapping(target = "created_at", ignore = true)
+
+    })
+
     Clss toClss(ClssReq clssReq);
 
     ClssResp toClssResp(Clss clss);

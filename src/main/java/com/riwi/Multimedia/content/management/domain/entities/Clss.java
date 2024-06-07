@@ -16,7 +16,7 @@ public class Clss {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(columnDefinition = "BIGINT(20)")
+    @Column(columnDefinition = "INT(20)")
     private Long id;
 
     @Column(nullable = false)
@@ -26,7 +26,7 @@ public class Clss {
     private String description;
 
     @Column(nullable = false)
-    private LocalDateTime created_ad;
+    private LocalDateTime created_at;
 
     @Column(nullable = false)
     private Boolean active;
